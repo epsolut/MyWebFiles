@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../main.css">
+    <title>Contact - Web Portfolio of Rokas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <!-- <div class="navbar navbar-inverse navbar-fixed-top" role="navigation"> -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="../index.html">SePicWonderful</a>
+    </div>
+    <!-- Collection of the nav links -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../blog/">Blog</a></li>
+            <li><a href="../projects/">Gallery</a></li>
+            <li class="active"><a href="../contact/index.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> <!-- Navigation --> 
+    
+    <div class="container" id=mainContainer>
+      <h1 class="title">Contact</h1>
+        <div id="map" style="width:100%;height:500px"></div>
+
+          <script>
+            function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+            center: new google.maps.LatLng(57.4230664,15.0825218),
+            zoom: 12
+            }
+            var uluru = {lat: 57.4287965, lng: 15.0823501};
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+            });
+            }
+          </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUb1qkHro4GGO6wXHHfqsyNHBgY47ygNA&callback=myMap"></script>
+      <br>
+      <p>
+        You can contact me by email: <a href="mailto:epsolut@gmail.com">epsolut@gmail.com</a>
+      </p>
+
+      <p>
+        Rokas Dar<br>
+        Lithuania
+      </p>
+    </div>
+  </body>
+</html>

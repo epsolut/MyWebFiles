@@ -1,0 +1,160 @@
+.welcome {
+  font-size: 30px;
+  border-radius: 3px;
+  background-color: rgba(168, 255, 82, 0.4);
+  color: black
+}
+.intro {
+  font-size: 30px;
+  border-radius: 8px;
+  background-color: #2e2c55;
+  color: white
+}
+.imageCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+.centerBlock {
+  display:table;
+  margin:auto
+}
+body {
+    background:#15081f url('/images/background02.jpg') top center repeat;
+}
+#back {
+    background:#15081f url('/images/cover03.jpg') top center repeat;
+}
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: rem;
+  background-color: #606060;
+  text-align: center;
+}
+#grad {
+    height: 20px;
+    background: linear-gradient(#E0E0E0, #606060);
+}
+.fadeimg {opacity:0;
+-moz-transition: opacity 2s; /* Firefox 4 */
+-webkit-transition: opacity 2s; /* Safari and Chrome */
+-o-transition: opacity 2s;
+transition: opacity 2s;
+}
+/* The navigation bar */
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+li {
+    float: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* Main content */
+#mainContainer {
+  margin-top: 46px; /* Add a top margin to avoid content overlay */
+ 
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.classWithPad { margin:10px; padding:10px; }
+
+.divFit {
+    display: inline-block;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.image:hover {
+  opacity: 0.6;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #334da7;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  width: 55px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 22px;
+  width: 36px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 4px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.3), 0 6px 13px 0 rgba(0,0,0,0.19);
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

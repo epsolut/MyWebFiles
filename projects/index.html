@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Gallery - Portfolio</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <!-- <div class="navbar navbar-inverse navbar-fixed-top" role="navigation"> -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="../index.html">SePicWonderful</a>
+    </div>
+    <!-- Collection of the nav links -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../blog/">Blog</a></li>
+            <li class="active"><a href="../projects/index.html">Gallery</a></li>
+            <li><a href="../contact/">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> <!-- Navigation --> 
+    <div class="container" id=mainContainer>
+<div class="w3-container">
+  <h1 class="title"> Įspūdžių galerija :) </h1>
+
+  <p>I'm too lazy to write text blablablabla maybe next time bla bla cha cha need to think something special if you know what I mean.</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial lol I have text.</p>
+  <div class="w3-row-content">
+    <div class="w3-container w3-col">
+    <img class="fadeimg" onload="this.style.opacity='1';" src="../images/sw14.jpg" style="width:100%;">
+  </div>
+  </div>
+</div>
+<br>
+
+<div class="w3-row-padding">
+  <div class="w3-container w3-third">
+    <img src="../images/sw02.jpg" style="width:100%;height: auto;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  <div class="w3-container w3-third">
+    <img src="../images/sw01.jpg" style="width:100%;height: auto;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+  
+  <div class="w3-container w3-third">
+    <img src="../images/sw03.jpg" style="width:100%;height: auto;cursor:pointer" 
+    onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+</div>
+      <br>
+      <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+      <img src="../images/sw12.jpg" style="width:100%;height: auto;cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+        <div class="w3-container w3-third">
+      <img src="../images/sw09.jpg" style="width:100%;height: auto;cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+        <div class="w3-container w3-third">
+      <img src="../images/sw06.jpg" style="width:100%;height: auto;cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+      </div>
+      
+      <br>
+      <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+      <img src="../images/sw07.jpg" style="width:100%; height: auto; cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+        <div class="w3-container w3-third">
+      <img src="../images/sw04.jpg" style="width:100%;height: auto;cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+        <div class="w3-container w3-third">
+      <img src="../images/sw10.jpg" style="width:100%;height: auto;cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+      </div>
+      
+      <br>
+      <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+      <img src="../images/sw11.jpg" style="width:100%;height: auto;cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+        <div class="w3-container w3-third">
+      <img src="../images/sw08.jpg" style="width:100%;height: auto;cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+        <div class="w3-container w3-third">
+      <img src="../images/sw13.jpg" style="width:100%;height: auto;cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+      </div>
+
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxlarge w3-container w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100%">
+  </div>
+  
+</div>
+      
+
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
+     <br>
+      
+    </div>
+  </body>
+</html>

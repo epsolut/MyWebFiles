@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.image:hover {
+  opacity: 0.3;
+}
+
+   
+      
+div.img {
+    border: 0px solid #ccc;
+}
+
+div.img:hover {
+    border: 0px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+  
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 100.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="/fancybox/jquery.fancybox.pack.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="jquery.fancybox.css">
+    <link  href="/fancybox/src/css/core.css" rel="stylesheet">
+    <link  href="/fancybox/src/css/fullscreen.css" rel="stylesheet">
+    <link  href="/fancybox/src/css/slideshow.css" rel="stylesheet">
+    <link  href="/fancybox/src/css/thumbs.css" rel="stylesheet">
+    <script src="/fancybox/src/js/core.js"></script>
+    <script src="/fancybox/src/js/fullscreen.js"></script>
+    <script src="/fancybox/src/js/guestures.js"></script>
+    <script src="/fancybox/src/js/media.js"></script>
+    <script src="/fancybox/src/js/slideshow.js"></script>
+    <script src="/fancybox/src/js/thumbs.js"></script>
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <title>Pagrindinis</title>
+
+  </head>
+  <body>
+    
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="jquery.fancybox.min.js"></script>
+     
+    <!-- Navigation -->
+    <!-- <div class="navbar navbar-inverse navbar-fixed-top" role="navigation"> -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">SePicWonderful</a>
+    </div>
+    <!-- Collection of the nav links -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="blog/">Blog</a></li>
+            <li><a href="projects/">Gallery</a></li>
+            <li><a href="contact/">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> <!-- Navigation --> 
+    
+    
+  <div class="container" id="mainContainer">
+      
+    <div class="responsive">
+    <div class="img">
+      
+    <div class="container-fluid" >
+      <div class="row" style="padding-top: 0px; padding-bottom: 0px; padding-left: 0px">
+        <div class="col-xs-7 col-sm-9 col-lg-12" style="padding-left: 0px;  padding-right: 0px;" id="left">
+        </div>
+        <div class="col-xs-5 col-sm-3 col-lg-2 col-md-push-10" style="padding-left: 20px;  padding-right: 0px; padding-top: 20px; padding-bottom: 20px;" id= "back"><a href="https://www.facebook.com/rokaz.despotaz" class="button fa fa-facebook"></a><a href="https://www.youtube.com/channel/UCMgnHM07obXfLgsEVzoZI2g" class="button fa fa-youtube"></a><a href="https://www.snapchat.com/add/epsolut" class="button fa fa-snapchat-ghost"></a>
+        </div>
+      </div>
+    </div>
+      
+    <div class="container-fluid" >
+      <h1 class="welcome">Welcome to my updated web with a lot of wonderful pictures of nature, look around! </h1>
+
+      
+      <div class="row" style="padding-top: 50px; padding-bottom: 20px;">
+        <div class="col-xs-6 col-sm-6 col-lg-5" style="padding-left: 0px;  padding-right: 0px;" id="left"> 
+          <h3><strong>Project:</strong> nature of Sweden </h3>
+        <h5>Project: nature of Sweden. Project: nature of Swe nature of Sweden.Project: nature of Sweden.Project: nature of Sweden.Project: nature of Sweden.Project: nature of Sweden.Project: nature of Sweden.Project: nature of Sweden. </h5></div>
+        <div class="col-xs-6 col-sm-6 col-lg-2" style="padding-left: 0px;  padding-right: 0px;" id="left"> 
+          <a href="images/sweden_flag.png" data-fancybox="group" data-caption="Aurora">
+        <img src="images/sweden_flag.png" alt="" class="image"/>
+        </a></div>
+      </div>
+
+    </div>
+    
+    <div class="container-fluid" >
+      
+      <div class="row" style="padding-bottom: 6px;">
+        <div class="col-xs-6 col-sm-6 col-lg-6" style="padding-left: 3px;  padding-right: 3px;"> 
+          <a href="images/sw07.jpg" data-fancybox="group" data-caption="Aurora">
+        <img src="images/sw07.jpg" alt="" class="image"/>
+        </a></div>
+        <div class="col-xs-6 col-sm-6 col-lg-6" style="padding-left: 3px;  padding-right: 3px;"><a href="images/sw10.jpg" data-fancybox="group" data-caption="Aurora">
+        <img src="images/sw10.jpg" alt="" class="image"/>
+        </a></div>
+      </div>
+      <div class="row" >
+        <div class="col-xs-6 col-sm-4 col-lg-4" style="padding-left: 3px;  padding-right: 3px;"><a href="images/sw11.jpg" data-fancybox="group" data-caption="Aurora">
+        <img src="images/sw11.jpg" alt="" class="image"/>
+        </a></div>
+        <div class="col-xs-6 col-sm-4 col-lg-4" style="padding-left: 3px;  padding-right: 3px; padding-bottom: 6px;"><a href="images/sw12.jpg" data-fancybox="group" data-caption="Aurora">
+        <img src="images/sw12.jpg" alt="" class="image"/>
+        </a></div>
+        <div class="col-xs-12 col-sm-4 col-lg-4" style="padding-left: 3px;  padding-right: 3px; padding-top: 0px;"><a href="images/sw07.jpg" data-fancybox="group" data-caption="Aurora">
+        <img src="images/sw07.jpg" alt="" class="image"/>
+        </a></div>
+      </div>
+      <div class="row" style="padding-top: 6px;">
+        <div class="col-xs-12 col-sm-12 col-lg-12" style="padding-left: 3px;  padding-right: 3px;">
+        <a href="images/sw14.jpg" data-fancybox="group" data-caption="Aurora">
+	    <img src="images/sw14.jpg" alt="" class="image"/>
+        </a></div>
+      </div>
+      <div class="row" style="padding-top: 6px;">
+        <div class="col-xs-3 col-sm-3 col-lg-3" style="padding-left: 3px;  padding-right: 3px;">
+        <a href="images/sw17cc.jpg" data-fancybox="group" data-caption="Aurora">
+	    <img src="images/sw17cc.jpg" alt="" class="image"/>
+        </a></div>
+        <div class="col-xs-6 col-sm-6 col-lg-6" style="padding-left: 3px;  padding-right: 3px;">
+        <a href="images/CSSgg.jpg" data-fancybox="group" data-caption="Aurora">
+	    <img src="images/CSSgg.jpg" alt="" class="image"/>
+        </a></div>
+        <div class="col-xs-3 col-sm-3 col-lg-3" style="padding-left: 3px;  padding-right: 3px;">
+        <a href="images/sw16cc.jpg" data-fancybox="group" data-caption="Aurora">
+	    <img src="images/sw16cc.jpg" alt="" class="image"/>
+        </a></div>
+      </div>
+  
+    </div>
+      
+      <div class="container-fluid" >
+      
+      <div class="row" style="padding-bottom: 6px;">
+        <div class="col-xs-6 col-sm-6 col-lg-6" style="padding-left: 3px;  padding-right: 3px;"> 
+          <a href="images/sw07.jpg" data-fancybox="group" data-caption="Aurora">
+        <img src="images/sw07.jpg" alt="" class="image"/>
+        </a></div>
+        <div class="col-xs-6 col-sm-6 col-lg-6" style="padding-left: 3px;  padding-right: 3px;"><a href="images/sw10.jpg" data-fancybox="group" data-caption="Aurora">
+        <img src="images/sw10.jpg" alt="" class="image"/>
+        </a></div>
+      </div>
+      <div class="row" >
+        <div class="col-xs-6 col-sm-4 col-lg-4" style="padding-left: 3px;  padding-right: 3px;"><a href="images/sw11.jpg" data-fancybox="group" data-caption="Aurora">
+        <img src="images/sw11.jpg" alt="" class="image"/>
+        </a></div>
+        <div class="col-xs-6 col-sm-4 col-lg-4" style="padding-left: 3px;  padding-right: 3px; padding-bottom: 6px;"><a href="images/sw12.jpg" data-fancybox="group" data-caption="Aurora">
+        <img src="images/sw12.jpg" alt="" class="image"/>
+        </a></div>
+        <div class="col-xs-12 col-sm-4 col-lg-4" style="padding-left: 3px;  padding-right: 3px; padding-top: 0px;"><a href="images/sw07.jpg" data-fancybox="group" data-caption="Aurora">
+        <img src="images/sw07.jpg" alt="" class="image"/>
+        </a></div>
+      </div>
+      <div class="row" style="padding-top: 6px;">
+        <div class="col-xs-12 col-sm-12 col-lg-12" style="padding-left: 3px;  padding-right: 3px;">
+        <a href="images/sw14.jpg" data-fancybox="group" data-caption="Aurora">
+	    <img src="images/sw14.jpg" alt="" class="image"/>
+        </a></div>
+      </div>
+      <div class="row" style="padding-top: 6px;">
+        <div class="col-xs-3 col-sm-3 col-lg-3" style="padding-left: 3px;  padding-right: 3px;">
+        <a href="images/sw17cc.jpg" data-fancybox="group" data-caption="Aurora">
+	    <img src="images/sw17cc.jpg" alt="" class="image"/>
+        </a></div>
+        <div class="col-xs-6 col-sm-6 col-lg-6" style="padding-left: 3px;  padding-right: 3px;">
+        <a href="images/CSSgg.jpg" data-fancybox="group" data-caption="Aurora">
+	    <img src="images/CSSgg.jpg" alt="" class="image"/>
+        </a></div>
+        <div class="col-xs-3 col-sm-3 col-lg-3" style="padding-left: 3px;  padding-right: 3px;">
+        <a href="images/sw16cc.jpg" data-fancybox="group" data-caption="Aurora">
+	    <img src="images/sw16cc.jpg" alt="" class="image"/>
+        </a></div>
+      </div>
+  
+    </div>
+    
+      
+    
+      
+      
+    </div> 
+    </div>
+      
+    
+  </div>
+        
+
+      
+      
+      <div class="clearfix"></div>
+      <div style="padding:6px;">
+    </div>
+      
+      <script>
+    $(document).ready(function() {
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});
+</script>
+      
+      <footer>
+                <div class="col-lg-12" style="padding-left: 0px;  padding-right: 0px;">
+                  <div class="centerBlock">
+                    <p>Copyright &copy; Rokas Productions 2017</p>
+                  </div>
+                </div>
+        </footer>
+    
+
+    
+  </body>
+</html>
