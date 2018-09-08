@@ -175,8 +175,8 @@ div.desc {
           <a href="images/nw00.jpg" data-fancybox="group" data-caption="FuckOFF">
         <img id="image" src="images/nw00.jpg" alt="" class="image"/>
         </a></div>
-        <div class="col-xs-6 col-sm-6 col-lg-6" style="padding-left: 3px;  padding-right: 3px;"><a href="images/sw10.jpg" data-fancybox="group" data-caption="Aurora">
-        <img src="images/sw10.jpg" alt="" class="image"/>
+        <div class="col-xs-6 col-sm-6 col-lg-6" style="padding-left: 3px;  padding-right: 3px;"><a href="images/nwSmall.jpg" data-fancybox="group" data-caption="Aurora">
+        <img id="image2" src="images/nwSmall.jpg" alt="" class="image"/>
         </a></div>
       </div>
       <div class="row" >
@@ -255,10 +255,6 @@ div.desc {
 	    <img src="images/sw16cc.jpg" alt="" class="image"/>
         </a></div>
       </div>
-        
-        <script type="text/javascript">
-        var image
-        </script>
   
     </div>
     
@@ -288,14 +284,18 @@ div.desc {
 </script>
     
     <script type="text/javascript">
+    var image2 = document.images[0]
     var image = document.images[0]
     var bigImage = document.createElement("img")
+    var bigImage2 = document.createElement("img")
     
     bigImage.onload=function(){
       image.src=this.src
     }
     setTimeout(function(){
       bigImage.src= "images/nw01.jpg";
+    }, 50)
+    bigImage2.src= "images/nw02.jpg";
     }, 50)
     </script>
       
